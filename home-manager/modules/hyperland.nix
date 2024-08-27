@@ -21,8 +21,9 @@
         "XDG_SESSION_DESKTOP,Hyprland"
         "QT_QPA_PLATFORM,wayland"
         "XDG_SCREENSHOTS_DIR,~/screens"
-	"GDK_SCALE,1.5"
-	"XCURSOR_SIZE,32"
+	"GDK_DPI_SCALE,1.2"
+	"GDK_SCALE,1.2"
+	"XCURSOR_SIZE,36"
       ];
 
       debug = {
@@ -114,6 +115,7 @@
         "swww init"
         "swww img ~/Wallpapers/default.jpg"
         "waybar"
+	"slack"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
       ];
