@@ -21,9 +21,9 @@
         "XDG_SESSION_DESKTOP,Hyprland"
         "QT_QPA_PLATFORM,wayland"
         "XDG_SCREENSHOTS_DIR,~/screens"
-	"GDK_SCALE,1.4"
-	"GDK_DPI_SCALE, 1.4"
-	"XCURSOR_SIZE,36"
+	"GDK_SCALE,1.5"
+	"GDK_DPI_SCALE, 1.5"
+	"XCURSOR_SIZE,32"
       ];
 
       debug = {

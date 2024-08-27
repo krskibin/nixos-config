@@ -19,6 +19,7 @@
     zoom-us
     vscode
     wezterm
+    lxappearance
 
     # Coding stuff
     nodejs
