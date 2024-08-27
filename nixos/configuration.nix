@@ -111,7 +111,6 @@
   # Install hyperland
   programs.hyprland = {
     enable = true;
-    xwayland.enable = true;
   };
 
   # Allow unfree packages
@@ -127,6 +126,7 @@
   # Set different terminal emulator
   environment.variables = {
     TERMINAL = "${pkgs.wezterm}/bin/wezterm";
+    EDITOR = "nvim";
   };
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
