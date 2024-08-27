@@ -17,7 +17,8 @@
     gparted
     obsidian
     zoom-us
-    alacritty
+    vscode
+    wezterm
 
     # Coding stuff
     nodejs
@@ -25,6 +26,7 @@
     ruby
 
     # CLI utils
+    neovim
     neofetch
     file
     tree

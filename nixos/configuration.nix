@@ -30,6 +30,9 @@
   # Set your time zone.
   time.timeZone = "Europe/Warsaw";
 
+  # Setting RTC time standard
+  time.hardwareClockInLocalTime = true;
+
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
