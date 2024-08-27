@@ -10,7 +10,7 @@
     homeDirectory = "/home/krystian";
     stateVersion = "24.05";
     sessionVariables = {
-       TERMINAL = "${pkgs.alacritty}/bin/alacritty";
+      TERMINAL = "${pkgs.wezterm}/bin/wezterm";
     };
   };
 }

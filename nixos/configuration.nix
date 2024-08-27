@@ -124,6 +124,10 @@
     home-manager
   ];
 
+  # Set different terminal emulator
+  environment.variables = {
+    TERMINAL = "${pkgs.wezterm}/bin/wezterm";
+  };
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
