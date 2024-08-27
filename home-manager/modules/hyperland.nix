@@ -6,17 +6,24 @@
     settings = {
       "$mainMod" = "SUPER";
 
-      monitor = "DP-3,highres,0x0,2";
+      monitor = [
+	"HDMI-2,3840x2160,0x0,2"
+        "DP-3,3840x2160,0x3840,2"
+      ];
+
+      xwayland = {
+	force_zero_scaling = 1;
+      };
 
       env = [
         "XDG_CURRENT_DESKTOP,Hyprland"
         "XDG_SESSION_TYPE,wayland"
         "XDG_SESSION_DESKTOP,Hyprland"
-        "XCURSOR_SIZE,36"
         "QT_QPA_PLATFORM,wayland"
         "XDG_SCREENSHOTS_DIR,~/screens"
-	"GDK_SCALE,2"
-	"XCURSOR_SIZE,32"
+	"GDK_SCALE,1.4"
+	"GDK_DPI_SCALE, 1.4"
+	"XCURSOR_SIZE,36"
       ];
 
       debug = {
@@ -25,7 +32,7 @@
       };
 
       input = {
-        kb_layout = "us";
+        kb_layout = "pl";
 
         follow_mouse = 1;
 

@@ -14,6 +14,7 @@
       config.default_gui_startup_args = {'start', '--always-new-process'}
       config.enable_wayland = false
       config.enable_tab_bar = false
+      config.dpi = 196
 
       -- Terminal Theme
       
@@ -26,6 +27,8 @@
       { family = 'Terminus', weight = 'Bold' },
       'Noto Color Emoji',
       }
+
+      config.font_size = 20.0
 
       config.color_scheme = 'Tokyo Night'
 

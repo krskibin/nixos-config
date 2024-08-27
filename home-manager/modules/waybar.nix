@@ -35,14 +35,6 @@
         format = "{:%a; %d %b, %I:%M %p}";
     };
 
-    "custom/weather" = {
-        format = "{}";
-        tooltip = true;
-        interval = 1800;
-        exec = "$HOME/.config/waybar/scripts/wttr.py";
-        return-type = "json";
-    };
-
     "pulseaudio" = {
         # scroll-step = 1; # %, can be a float
         reverse-scrolling = 1;
@@ -109,7 +101,7 @@
     };
 
     tray = {
-        icon-size = 16;
+        icon-size = 10;
         spacing = 0;
     };
 
@@ -124,7 +116,8 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: JetBrains Mono;
     font-weight: bold; 
-    min-height: 20px;
+    min-height: 12px;
+    font-size: 12px;
 }
 
 window#waybar {
@@ -172,9 +165,9 @@ window#waybar.hidden {
 }
 
 #language {
-    padding-left: 16px;
+    padding-left: 8px;
     padding-right: 8px;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 10px 10px 10px;
     transition: none;
     color: #ffffff;
     background: #383c4a;
@@ -182,8 +175,8 @@ window#waybar.hidden {
 
 #keyboard-state {
     margin-right: 8px;
-    padding-right: 16px;
-    border-radius: 0px 10px 10px 0px;
+    padding-right: 8px;
+    border-radius: 10px 10px 10px 10px;
     transition: none;
     color: #ffffff;
     background: #383c4a;
@@ -219,15 +212,7 @@ window#waybar.hidden {
 #clock {
     padding-left: 16px;
     padding-right: 16px;
-    border-radius: 10px 0px 0px 10px;
-    transition: none;
-    color: #ffffff;
-    background: #383c4a;
-}
-
-#custom-weather {
-    padding-right: 16px;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 10px 10px 10px 10px;
     transition: none;
     color: #ffffff;
     background: #383c4a;
