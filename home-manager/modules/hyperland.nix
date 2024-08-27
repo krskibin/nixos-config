@@ -6,7 +6,7 @@
     settings = {
       "$mainMod" = "SUPER";
 
-      monitor = ",3840x2160@60,auto,1.25";
+      monitor = "DP-3,3840x2160@60,0x0,2";
 
       env = [
         "XDG_CURRENT_DESKTOP,Hyprland"
@@ -24,8 +24,6 @@
 
       input = {
         kb_layout = "us";
-        kb_variant = "lang";
-        kb_options = "grp:caps_toggle";
 
         follow_mouse = 1;
 
@@ -44,8 +42,6 @@
         "col.inactive_border" = "rgba(595959aa)";
 
         layout = "dwindle";
-
-        no_cursor_warps = false;
       };
 
       decoration = {
@@ -85,10 +81,6 @@
         preserve_split = true; # you probably want this
       };
 
-      master = {
-        new_is_master = true;
-      };
-
       gestures = {
         workspace_swipe = true;
         workspace_swipe_fingers = 3;
@@ -112,7 +104,7 @@
 
       exec-once = [
         "swww init"
-        "swww img ~/Downloads/nixos-chan.png"
+        "swww img ~/Wallpapers/default.jpg"
         "waybar"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"

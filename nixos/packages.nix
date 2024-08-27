@@ -41,6 +41,7 @@
     ranger
     zip
     openssl
+    swww
     bluez
     bluez-tools
 
