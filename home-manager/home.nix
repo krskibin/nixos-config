@@ -2,7 +2,6 @@
 {
   imports = [
     ./zsh.nix
-    ./wezterm.nix
     ./modules/bundle.nix
   ];
 
