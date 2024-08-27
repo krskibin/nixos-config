@@ -7,7 +7,7 @@
       "$mainMod" = "SUPER";
 
       monitor = [
-        "DP-3,3840x2160,0x0,2"
+        "DP-3,3840x2160,0x0,1.5"
 	"HDMI-2,3840x2160,0x-3840,2"
       ];
 
@@ -22,7 +22,6 @@
         "QT_QPA_PLATFORM,wayland"
         "XDG_SCREENSHOTS_DIR,~/screens"
 	"GDK_SCALE,1.5"
-	"GDK_DPI_SCALE, 1.5"
 	"XCURSOR_SIZE,32"
       ];
 

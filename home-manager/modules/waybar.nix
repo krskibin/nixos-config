@@ -113,11 +113,9 @@
 * {
     border: none;
     border-radius: 0;
-    /* `otf-font-awesome` is required to be installed for icons */
     font-family: JetBrains Mono;
     font-weight: bold; 
-    min-height: 14px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 window#waybar {
