@@ -7,8 +7,8 @@
       "$mainMod" = "SUPER";
 
       monitor = [
-	"HDMI-2,3840x2160,0x0,2"
-        "DP-3,3840x2160,0x3840,2"
+        "DP-3,3840x2160,0x0,2"
+	"HDMI-2,3840x2160,0x-3840,2"
       ];
 
       xwayland = {
