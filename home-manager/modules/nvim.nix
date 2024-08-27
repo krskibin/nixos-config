@@ -6,7 +6,7 @@
 
     # Enable neovim aliasses
     viAlias = true;
-    vimAliast = true;
+    vimAlias = true;
     vimdiffAlias = true;
 
     # Plugins
