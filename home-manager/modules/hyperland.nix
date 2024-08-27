@@ -8,11 +8,11 @@
 
       monitor = [
         "DP-3,3840x2160,0x0,1.5"
-	"HDMI-2,3840x2160,0x-3840,2"
+	      "HDMI-2,3840x2160,0x-3840,2"
       ];
 
       xwayland = {
-	force_zero_scaling = 1;
+	      force_zero_scaling = 1;
       };
 
       env = [
@@ -21,9 +21,9 @@
         "XDG_SESSION_DESKTOP,Hyprland"
         "QT_QPA_PLATFORM,wayland"
         "XDG_SCREENSHOTS_DIR,~/screens"
-	"GDK_DPI_SCALE,1.2"
-	"GDK_SCALE,1.2"
-	"XCURSOR_SIZE,36"
+        "GDK_DPI_SCALE,1.2"
+        "GDK_SCALE,1.2"
+        "XCURSOR_SIZE,36"
       ];
 
       debug = {
@@ -113,7 +113,7 @@
 
       exec-once = [
         "swww init"
-        "swww img ~/Wallpapers/default.jpg"
+        "swww img ~/Wallpapers/nixos-wallpaper.webp"
         "waybar"
 	"slack"
         "wl-paste --type text --watch cliphist store"
