@@ -25,7 +25,7 @@
       pkgs = "nvim ${flakeDir}/nixos/packages.nix";
 
       ll = "ls -l";
-      v = "nvim";
+      vim = "nvim";
       se = "sudoedit";
       ff = "fastfetch";
     };
