@@ -123,11 +123,23 @@
     home-manager
   ];
 
-  # Set different terminal emulator
+  # Set env variables
   environment.variables = {
     TERMINAL = "${pkgs.wezterm}/bin/wezterm";
     EDITOR = "nvim";
+    XDG_CURRENT_DESKTOP = "Hyprland";
+    XDG_SESSION_TYPE = "wayland";
+    XDG_SESSION_DESKTOP = "Hyprland";
   };
+  
+  # Set some session variables
+  environment.sessionVariables = {
+    MOZ_ENABLE_WAYLAND = "1";
+    NIXOS_OZONE_WL = "1";
+    ELECTRON_OZONE_PLATFORM_HINT = "auto";
+    WLR_NO_HARDWARE_CURSORS = "1";
+  };
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;

@@ -19,7 +19,7 @@
     zoom-us
     vscode
     wezterm
-    lxappearance
+    slack
 
     # Coding stuff
     nodejs
@@ -45,6 +45,7 @@
     swww
     bluez
     bluez-tools
+    heroku
 
     # GUI utils
     feh
