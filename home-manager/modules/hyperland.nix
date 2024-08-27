@@ -113,7 +113,7 @@
 
       exec-once = [
         "swww init"
-        "swww img ~/Wallpapers/nixos-wallpaper.webp"
+        "swww img ./nixos-wallpaper.webp"
         "waybar"
 	"slack"
         "wl-paste --type text --watch cliphist store"
