@@ -3,7 +3,8 @@
     enable = true;
 
     defaultEditor = true;
-    colorschemes.oxocarbon.enable = true;
+    colorschemes.catppuccin.enable = true;
+    colorschemes.catppuccin.settings.background.dark = "mocha";
     
     clipboard = {
       register = "unnamedplus";
@@ -13,7 +14,6 @@
     opts = {
       updatetime = 100; # Faster completion
 
-      relativenumber = true; # Relative line numbers
       number = true; # Display the absolute line number of the current line
 
       hidden = true; # Keep closed buffer open in the background
@@ -42,7 +42,6 @@
       cursorline = false; # Highlight the screen line of the cursor
       cursorcolumn = false; # Highlight the screen column of the cursor
       signcolumn = "yes"; # Whether to show the signcolumn
-      colorcolumn = "100"; # Columns to highlight
 
       laststatus = 3; # When to use a status line for the last window
 
