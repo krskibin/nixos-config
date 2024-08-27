@@ -9,7 +9,7 @@
 
         modules-left = ["hyprland/workspaces" "hyprland/language" "keyboard-state" "hyprland/submap"];
         modules-center = ["clock" "custom/weather"];
-        modules-right = ["pulseaudio" "custom/mem" "cpu" "backlight" "battery" "tray"];
+        modules-right = ["pulseaudio" "custom/mem" "cpu" "tray"];
 
         "hyprland/workspaces" = {
           disable-scroll = true;
@@ -116,7 +116,7 @@
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: JetBrains Mono;
     font-weight: bold; 
-    min-height: 12px;
+    min-height: 14px;
     font-size: 12px;
 }
 
@@ -140,7 +140,7 @@ window#waybar.hidden {
     color: #7c818c;
     background: transparent;
     padding: 5px;
-    font-size: 18px;
+    font-size: 12px;
 }
 
 #workspaces button.persistent {
