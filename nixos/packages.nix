@@ -82,10 +82,20 @@
 
     # Other
     home-manager
+    spice-vdagent
+    libsForQt5.qtstyleplugin-kvantum
+    libsForQt5.qt5ct
   ];
 
+  
   fonts.packages = with pkgs; [
     jetbrains-mono
+    noto-fonts
+    noto-fonts-emoji
+    twemoji-color-font
     font-awesome
+    powerline-fonts
+    powerline-symbols
+    (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
   ];
 }

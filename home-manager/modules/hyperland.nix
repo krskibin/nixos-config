@@ -6,7 +6,7 @@
     settings = {
       "$mainMod" = "SUPER";
 
-      monitor = "DP-3,3840x2160@60,0x0,2";
+      monitor = "DP-3,highres,0x0,2";
 
       env = [
         "XDG_CURRENT_DESKTOP,Hyprland"
@@ -15,6 +15,8 @@
         "XCURSOR_SIZE,36"
         "QT_QPA_PLATFORM,wayland"
         "XDG_SCREENSHOTS_DIR,~/screens"
+	"GDK_SCALE,2"
+	"XCURSOR_SIZE,32"
       ];
 
       debug = {
