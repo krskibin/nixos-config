@@ -3,7 +3,7 @@
     ./git.nix
     ./htop.nix
     ./tmux.nix
-    ./nvim.nix
+    ./nixvim.nix
     ./wezterm.nix
     ./waybar.nix
     ./hyperland.nix
