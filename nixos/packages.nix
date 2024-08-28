@@ -20,6 +20,7 @@
     vscode
     wezterm
     slack
+    xfce.xfce4-pulseaudio-plugin
 
     # Coding stuff
     nodejs
@@ -91,6 +92,7 @@
     spice-vdagent
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5ct
+    pulseaudio
   ];
 
   
