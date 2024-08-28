@@ -25,6 +25,7 @@
     nodejs
     python
     ruby
+    ruby-lsp
     direnv
 
     # CLI utils
