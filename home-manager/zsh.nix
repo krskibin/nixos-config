@@ -35,7 +35,7 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "sudo" "tmux" ];
+      plugins = [ "git" "sudo" "tmux" "direnv" ];
       theme = "risto";
     };
   };

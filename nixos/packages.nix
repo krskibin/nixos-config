@@ -25,6 +25,7 @@
     nodejs
     python
     ruby
+    direnv
 
     # CLI utils
     neovim
