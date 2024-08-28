@@ -9,6 +9,7 @@
       "**/.direnv"
       "**/shell.nix"
       "**/dump.rdb"
+      "**/.history"
     ];
   };
 }
