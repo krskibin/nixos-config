@@ -24,9 +24,11 @@
     # Coding stuff
     nodejs
     python
-    ruby
+    ruby_3_3
     ruby-lsp
     direnv
+    gcc
+    gnumake
 
     # CLI utils
     neovim
