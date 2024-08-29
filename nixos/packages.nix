@@ -60,6 +60,7 @@
     screenkey
     mako
     gromit-mpx
+    pavucontrol
 
     # Wayland stuff
     xwayland

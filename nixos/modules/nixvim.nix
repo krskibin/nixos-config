@@ -133,6 +133,14 @@
     ];
   };
 
+  programs.nixvim.plugins.lsp = {
+    enable = true;
+  };
+
+  programs.nixvim.plugins.lsp-status = {
+    enable = true;
+  };
+
   programs.nixvim.plugins.lualine = {
     enable = true;
     globalstatus = true;
@@ -212,7 +220,7 @@
 
     title = "";
 
-    keymaps.toggle = "<C-b>";
+    keymaps.toggle = "<C-/>";
   };
 
   programs.nixvim.plugins.neo-tree = {
@@ -234,6 +242,8 @@
       # "<leader>fd" = "diagnostics";
     };
 
+    
+
     settings.defaults = {
       file_ignore_patterns = [
         "^.git/"
@@ -247,14 +257,62 @@
     };
   };
 
-  programs.nixvim.plugins.nix.enable = true;
+  programs.nixvim.plugins.lint = {
+    enable = true;
+    lintersByFt = {
+      clojure = [
+        "clj-kondo"
+      ];
+      javascript = [
+        "eslint"
+      ];
+      python = [
+        "pylint"
+      ];
+      dockerfile = [
+        "hadolint"
+      ];
+      inko = [
+        "inko"
+      ];
+      janet = [
+        "janet"
+      ];
+      json = [
+        "jsonlint"
+      ];
+      markdown = [
+        "vale"
+      ];
+      rst = [
+        "vale"
+      ];
+      ruby = [
+        "rubocop"
+      ];
+      erb = [
+        "erb_lint"
+      ];
+      terraform = [
+        "tflint"
+      ];
+      text = [
+        "vale"
+      ];
+    };
+  };
 
   programs.nixvim.plugins.luasnip = {
     enable = true;
-    settings = {
-      enable_autosnippets = true;
-      store_selection_keys = "<leader>s";
-    };
+    
   };
+
+  programs.nixvim.plugins.vim-css-color = {
+    enable = true;
+  };
+
+  programs.nixvim.plugins.nix.enable = true;
+
+
 }
 
