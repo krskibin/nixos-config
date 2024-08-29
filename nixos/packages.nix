@@ -51,6 +51,7 @@
     bluez
     bluez-tools
     heroku
+    helix
 
     # GUI utils
     feh
