@@ -133,6 +133,41 @@
     ];
   };
 
+  programs.nixvim.plugins.lsp = {
+    enable = true;
+    servers = {
+      # nix language analyzer
+      nixd.enable = true;
+
+      # javascript / typescript
+      tsserver.enable = true;
+      eslint.enable = true;
+
+      # lua
+      lua-ls.enable = true;
+
+      # rust
+      rust-analyzer.enable = true;
+      rust-analyzer.installRustc = true;
+      rust-analyzer.installCargo = true;
+
+      # ruby
+      ruby-lsp.enable = true;
+
+      # python
+      pyright.enable = true;
+
+      # html
+      htmx.enable = true;
+      cssls.enable = true;
+
+      # json
+      jsonls.enable = true;
+    };
+
+
+  };
+
   programs.nixvim.plugins.lualine = {
     enable = true;
     globalstatus = true;
@@ -279,11 +314,11 @@
       rst = [
         "vale"
       ];
-      ruby = [
-        "rubocop"
-      ];
       erb = [
-        "erb_lint"
+        "erb-lint"
+      ];
+      haml = [
+        "haml-lint"
       ];
       terraform = [
         "tflint"
@@ -377,6 +412,9 @@
 
   programs.nixvim.plugins.nix.enable = true;
 
+  programs.nixvim.plugins.oil.enable = true;
+
+  programs.nixvim.plugins.treesitter.enable = true;
 
 }
 
