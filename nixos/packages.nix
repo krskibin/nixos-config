@@ -26,7 +26,9 @@
     nodejs
     python
     ruby_3_3
-    ruby-lsp
+    rubyPackages_3_3.ruby-lsp
+    rubyPackages_3_3.pg
+    rubyPackages_3_3.syntax_tree
     direnv
     gcc
     gnumake
