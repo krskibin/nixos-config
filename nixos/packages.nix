@@ -22,14 +22,14 @@
     slack
     xfce.xfce4-pulseaudio-plugin
 
-    # Coding stuff
+    # Development
     nodejs
     python
     ruby_3_3
     rubyPackages_3_3.ruby-lsp
     rubyPackages_3_3.pg
     rubyPackages_3_3.syntax_tree
-    direnv
+    libyaml
     gcc
     gnumake
 

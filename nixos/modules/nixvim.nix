@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   programs.nixvim = {
     enable = true;
@@ -153,6 +154,7 @@
 
       # ruby
       ruby-lsp.enable = true;
+      ruby-lsp.cmd = ["${pkgs.rubyPackages_3_3.ruby-lsp}/bin/ruby-lsp"];
 
       # python
       pyright.enable = true;
