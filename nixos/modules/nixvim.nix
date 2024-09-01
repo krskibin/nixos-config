@@ -267,11 +267,9 @@
       "<leader>fh" = "help_tags";
       "<leader>gf" = "git_files";
       "<leader>of" = "oldfiles";
-      # "<leader>fg" = "live_grep";
+      "<leader>fg" = "live_grep";
       # "<leader>fd" = "diagnostics";
     };
-
-    
 
     settings.defaults = {
       file_ignore_patterns = [
@@ -381,6 +379,17 @@
     };
   };
 
+  programs.nixvim.plugins.lspkind = {
+    enable = true;
+    symbolMap = {
+      Copilot = "";
+    };
+    extraOptions = {
+      maxwidth = 50;
+      ellipsis_char = "...";
+    };
+  };
+
   programs.nixvim.plugins.cmp-nvim-lsp = {
     enable = true; # LSP
   };
@@ -397,26 +406,14 @@
     enable = true; # autocomplete for cmdline
   }; 
 
-  programs.nixvim.plugins.lspkind = {
-    enable = true;
-    symbolMap = {
-      Copilot = "";
-    };
-    extraOptions = {
-      maxwidth = 50;
-      ellipsis_char = "...";
-    };
-  };
-
   programs.nixvim.plugins.vim-css-color = {
     enable = true;
   };
 
-  programs.nixvim.plugins.nix.enable = true;
-
-  programs.nixvim.plugins.oil.enable = true;
-
   programs.nixvim.plugins.treesitter.enable = true;
+  programs.nixvim.plugins.nix.enable = true;
+  programs.nixvim.plugins.oil.enable = true;
+  programs.nixvim.plugins.fzf-lua.enable = true;
 
 }
 

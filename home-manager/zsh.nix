@@ -1,6 +1,7 @@
 { config, ... }:
 
 {
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;
@@ -35,8 +36,16 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "sudo" "tmux" "direnv" ];
+      plugins = [ "git" "sudo" "tmux" "direnv" "fzf" ];
       theme = "risto";
     };
+  };
+
+  programs.fzf = {
+    enable = true;
+  };
+
+  programs.ripgrep = {
+    enable = true;
   };
 }
