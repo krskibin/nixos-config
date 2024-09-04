@@ -10,6 +10,9 @@
 
     localVariables = {
       ZSH_TMUX_AUTOSTART = true;
+      GEM_HOME = "${config.home.homeDirectory}/.local/share/gem/ruby/3.3.0";
+      GEM_PATH = "${config.home.homeDirectory}/.local/share/gem/ruby/3.3.0";
+      PATH = "${config.home.homeDirectory}/.local/share/gem/ruby/3.3.0/bin:$PATH";
     };   
  
     shellAliases =
