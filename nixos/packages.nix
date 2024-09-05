@@ -21,6 +21,8 @@
     wezterm
     slack
     xfce.xfce4-pulseaudio-plugin
+    networkmanagerapplet
+    blueman
 
     # Development
     nodejs
