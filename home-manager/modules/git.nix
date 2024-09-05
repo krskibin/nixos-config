@@ -10,6 +10,9 @@
       "**/shell.nix"
       "**/dump.rdb"
       "**/.history"
+      "**/flake.nix"
+      "**/flake.lock"
+      "**/gemset.nix"
     ];
   };
 }
