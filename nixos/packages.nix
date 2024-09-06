@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ inputs, pkgs, ... }: {
   nixpkgs.config = {
     allowUnfree = true;
     permittedInsecurePackages = ["python-2.7.18.8" "electron-25.9.0"];
@@ -95,8 +95,9 @@
     spice-vdagent
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5ct
-  ];
+    inputs.zen-browser.packages.x86_64-linux.default
 
+  ];
   
   fonts.packages = with pkgs; [
     jetbrains-mono

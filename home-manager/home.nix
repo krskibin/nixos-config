@@ -13,4 +13,5 @@
       TERMINAL = "${pkgs.wezterm}/bin/wezterm";
     };
   };
+ 
 }

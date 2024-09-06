@@ -114,11 +114,9 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
-  # Install zsh
-  programs.zsh = {
-    enable = true;
-  };
-
+  # NixOS experimental features
+  nix.settings.experimental-features = ["nix-command" "flakes"];
+  
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.krystian = {
     isNormalUser = true;
@@ -130,8 +128,11 @@
     shell = pkgs.zsh;
   };
 
-  # NixOS experimental features
-  nix.settings.experimental-features = ["nix-command" "flakes"];
+  
+  # Install zsh
+  programs.zsh = {
+    enable = true;
+  };
 
   # Install firefox.
   programs.firefox.enable = true;

@@ -12,6 +12,11 @@
       url = "github:nix-community/nixvim/nixos-24.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    zen-browser = {
+      url = "github:MarceColl/zen-browser-flake";
+      inputs.zen-browser.follows = "nixpkgs";
+    };
   };
 
   outputs = {self, nixpkgs, home-manager, ...}@inputs :
@@ -20,6 +25,7 @@
     in{
     nixosConfigurations.BD-1 = nixpkgs.lib.nixosSystem {
       inherit system;
+      specialArgs = { inherit inputs; };
       modules = [ 
         ./nixos/configuration.nix
         inputs.nixvim.nixosModules.nixvim
