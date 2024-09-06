@@ -27,10 +27,7 @@
     # Development
     nodejs
     python
-    ruby_3_3
-    rubyPackages_3_3.ruby-lsp
-    rubyPackages_3_3.pg
-    rubyPackages_3_3.syntax_tree
+    ruby
     libyaml
     gcc
     gnumake
@@ -55,7 +52,6 @@
     bluez
     bluez-tools
     heroku
-    helix
 
     # GUI utils
     feh
@@ -98,7 +94,6 @@
     spice-vdagent
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5ct
-    pulseaudio
   ];
 
   

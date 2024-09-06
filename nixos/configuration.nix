@@ -8,8 +8,8 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ./packages.nix
       ./modules/bundle.nix
+      ./packages.nix
     ];
 
   # Bootloader.
@@ -41,7 +41,7 @@
   # Kernel.
   boot.kernel.sysctl."vm.overcommit_memory" = "1";
 
-  boot.initrd.luks.devices."luks-5264df70-518e-4670-b3ff-e359bd441398".device = "/dev/disk/by-uuid/5264df70-518e-4670-b3ff-e359bd441398";
+  boot.initrd.luks.devices."luks-1b85edf7-acf1-402f-bcf3-88bca9a9a079".device = "/dev/disk/by-uuid/1b85edf7-acf1-402f-bcf3-88bca9a9a079";
 
   networking.hostName = "BD-1"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
