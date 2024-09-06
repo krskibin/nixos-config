@@ -191,7 +191,7 @@
         ", XF86AudioRaiseVolume, exec, pamixer -i 5 "
         ", XF86AudioLowerVolume, exec, pamixer -d 5 "
         ", XF86AudioMute, exec, pamixer -t"
-        ", XF86AudioMicMute, exec, pamixer --default-source -m"
+        ", XF86AudioMicMute, exec, pamixer --default-source -t"
         
         # Brightness control
         ", XF86MonBrightnessDown, exec, brightnessctl set 5%- "
