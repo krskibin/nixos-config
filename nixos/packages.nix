@@ -49,6 +49,7 @@
     zip
     openssl
     swww
+    wev
     bluez
     bluez-tools
     heroku
