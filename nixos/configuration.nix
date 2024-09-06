@@ -37,10 +37,6 @@
     loader.timeout = 0;
   };
 
-
-  # Kernel.
-  boot.kernel.sysctl."vm.overcommit_memory" = "1";
-
   boot.initrd.luks.devices."luks-1b85edf7-acf1-402f-bcf3-88bca9a9a079".device = "/dev/disk/by-uuid/1b85edf7-acf1-402f-bcf3-88bca9a9a079";
 
   networking.hostName = "BD-1"; # Define your hostname.
