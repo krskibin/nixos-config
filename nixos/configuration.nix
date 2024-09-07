@@ -14,11 +14,22 @@
 
   # Bootloader.
   boot = {
-    loader.systemd-boot.enable = true;
     loader.efi.canTouchEfiVariables = true;
+    
+    loader.systemd-boot.enable = false;
+
+    # Grub settings
+    loader.grub.enable = true;
+    loader.grub.device = "nodev";
+    loader.grub.useOSProber = true;
+
     loader.timeout = 2;
+
+    # Initrd
     initrd.enable = true;
-    initrd.systemd.enable = true;
+    initrd.verbose = false;
+
+    # Plymouth Cattppuccin
     plymouth = {
       enable = true;
       themePackages = [ pkgs.catppuccin-plymouth ];
@@ -27,7 +38,6 @@
 
     # Enable 'Silent Boot'
     consoleLogLevel = 0;
-    initrd.verbose = false;
     kernelParams = [
       "quiet"
       "splash"
