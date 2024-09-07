@@ -43,8 +43,8 @@
     ];
   };
 
-  boot.initrd.luks.devices."luks-1b85edf7-acf1-402f-bcf3-88bca9a9a079".device = "/dev/disk/by-uuid/1b85edf7-acf1-402f-bcf3-88bca9a9a079";
-
+  boot.initrd.luks.devices."luks-6f87ca62-3aa2-433b-9459-e006d1e6e031".device = "/dev/disk/by-uuid/6f87ca62-3aa2-433b-9459-e006d1e6e031";
+  
   networking.hostName = "BD-1"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
