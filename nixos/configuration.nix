@@ -14,13 +14,8 @@
 
   # Bootloader.
   boot = {
+    loader.systemd-boot.enable = true;
     loader.efi.canTouchEfiVariables = true;
-    
-    loader.systemd-boot.enable = false;
-
-    # Grub settings
-    loader.grub.enable = true;
-    loader.grub.device = "nodev";
 
     loader.timeout = 2;
 
