@@ -16,11 +16,15 @@
   boot = {
     loader.systemd-boot.enable = true;
     loader.efi.canTouchEfiVariables = true;
-    loader.systemd-boot.editor = true;
+    loader.timeout = 2;
+    initrd.enable = true;
+    initrd.systemd.enable = true;
+    plymouth = {
+      enable = true;
+      themePackages = [ pkgs.catppuccin-plymouth ];
+      theme = "catppuccin-macchiato";
+    };
 
-    # Plymouth - os booting screen config
-    plymouth.enable = true;
-          
     # Enable 'Silent Boot'
     consoleLogLevel = 0;
     initrd.verbose = false;
@@ -33,8 +37,6 @@
       "rd.udev.log_level=3"
       "udev.log_priority=3"
     ];
-
-    loader.timeout = 0;
   };
 
   boot.initrd.luks.devices."luks-1b85edf7-acf1-402f-bcf3-88bca9a9a079".device = "/dev/disk/by-uuid/1b85edf7-acf1-402f-bcf3-88bca9a9a079";
