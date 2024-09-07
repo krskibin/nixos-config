@@ -21,7 +21,6 @@
     # Grub settings
     loader.grub.enable = true;
     loader.grub.device = "nodev";
-    loader.grub.useOSProber = true;
 
     loader.timeout = 2;
 
