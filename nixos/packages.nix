@@ -9,8 +9,6 @@
     audacity
     google-chrome
     obs-studio
-    rofi
-    wofi
     mpv
     kdenlive
     discord
@@ -20,6 +18,8 @@
     vscode
     wezterm
     slack
+    xfce.thunar
+    fuzzel
     xfce.xfce4-pulseaudio-plugin
     networkmanagerapplet
     blueman
