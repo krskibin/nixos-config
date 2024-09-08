@@ -19,7 +19,6 @@
     wezterm
     slack
     xfce.thunar
-    fuzzel
     xfce.xfce4-pulseaudio-plugin
     networkmanagerapplet
     blueman
