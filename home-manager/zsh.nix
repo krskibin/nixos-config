@@ -6,7 +6,15 @@
     enable = true;
     enableCompletion = true;
     autosuggestion.enable = true;
-    syntaxHighlighting.enable = true;
+    syntaxHighlighting = { 
+      enable = true;
+      highlighters = ["main" "brackets" "pattern"];
+      styles = {
+        "single-hyphen-option" = "fg=magenta,bold";
+        "double-hyphen-option" = "fg=yellow";
+      };
+      
+    };
 
     localVariables = {
       ZSH_TMUX_AUTOSTART = true;
@@ -39,7 +47,7 @@
 
     oh-my-zsh = {
       enable = true;
-      plugins = [ "git" "sudo" "tmux" "direnv" "fzf" ];
+      plugins = [ "git" "sudo" "tmux" "direnv" "fzf" "command-not-found" "compleat" ];
       theme = "risto";
     };
   };
