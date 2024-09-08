@@ -8,6 +8,7 @@
       "**/.envrc"  
       "**/.direnv"
       "**/shell.nix"
+      "**/gemset.nix"
       "**/dump.rdb"
       "**/.history"
     ];

@@ -51,7 +51,8 @@
       termguicolors = false; # Disables 24-bit RGB color in the |TUI|
 
       spell = false; # Highlight spelling mistakes (local to window)
-      wrap = false; # Prevent text from wrapping
+      spelllang = "en_us"; # Set spellchecking language to English US
+      wrap = false; # Prevent text from wrapping hsdf 
 
       tabstop = 2; # Number of spaces a <Tab> in the text stands for (local to buffer)
       shiftwidth = 2; # Number of spaces used for each step of (auto)indent (local to buffer)
@@ -65,6 +66,7 @@
       completeopt = ["menu" "menuone" "noselect"]; # For CMP plugin
     };
 
+    globals.mapleader = " "; # Remap <leader> to space
     keymaps = [
       # Global
       # Default mode is "" which means normal-visual-op
@@ -411,9 +413,12 @@
   };
 
   programs.nixvim.plugins.treesitter.enable = true;
+  programs.nixvim.plugins.nvim-tree.enable = true;
+  programs.nixvim.plugins.surround.enable = true;
   programs.nixvim.plugins.nix.enable = true;
   programs.nixvim.plugins.oil.enable = true;
+  programs.nixvim.plugins.zen-mode.enable = true;
   programs.nixvim.plugins.fzf-lua.enable = true;
-
+  programs.nixvim.plugins.cmp-spell.enable = true;
 }
 

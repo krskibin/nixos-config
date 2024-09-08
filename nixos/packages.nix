@@ -95,8 +95,10 @@
     spice-vdagent
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5ct
-    inputs.zen-browser.packages.x86_64-linux.default
 
+
+    # Outside source packages
+    inputs.zen-browser.packages.x86_64-linux.default
   ];
   
   fonts.packages = with pkgs; [
