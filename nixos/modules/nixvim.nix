@@ -163,7 +163,12 @@
 
       # html
       htmx.enable = true;
+      htmx.filetypes = ["html" "erb" "haml"];
       cssls.enable = true;
+
+      # tailwindcss
+      tailwindcss.enable = true;
+      tailwindcss.filetypes = ["html" "erb" "haml"];
 
       # json
       jsonls.enable = true;
