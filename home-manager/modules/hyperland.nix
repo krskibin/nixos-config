@@ -23,7 +23,7 @@
         "XDG_SCREENSHOTS_DIR,~/screens"
         "GDK_DPI_SCALE,1.2"
         "GDK_SCALE,1.2"
-        "XCURSOR_SIZE,36"
+        "XCURSOR_SIZE,24"
       ];
 
       debug = {
@@ -115,14 +115,14 @@
         "swww init"
         "swww img ./nixos-wallpaper.webp"
         "waybar"
-	"slack"
+	      "slack &"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
       ];
 
       workspace = [
-	"1, monitor:DP-3"
-	"1, monitor:HDMI-2"
+	      "1, monitor:DP-3"
+	      "2, monitor:HDMI-2"
       ];
 
       bind = [
