@@ -122,7 +122,7 @@
 
       workspace = [
 	      "1, monitor:DP-3"
-	      "2, monitor:HDMI-2"
+	      "1, monitor:HDMI-2"
       ];
 
       bind = [
