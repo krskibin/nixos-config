@@ -143,10 +143,24 @@
   # Install firefox.
   programs.firefox.enable = true;
 
+  ## Hyprland
   # Install hyperland
   programs.hyprland = {
     enable = true;
   };
+
+  # Install hyprlock
+  programs.hyprlock.enable = true;
+
+  # Install hypridle
+  services.hypridle.enable = true;
+
+  # Turn on pam security services for hyprlock
+  security = {
+    polkit.enable = true;
+    pam.services.hyprlock = {};
+  };
+  ##
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

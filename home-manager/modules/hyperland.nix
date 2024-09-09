@@ -136,6 +136,7 @@
         "$mainMod, D, exec, fuzzel --show drun"
         "$mainMod, P, pseudo, # dwindle"
         "$mainMod, J, togglesplit, # dwindle"
+        "$mainMod, L, exec, hyprlock"
 
         # Move focus with mainMod + arrow keys
         "$mainMod, left,  movefocus, l"
