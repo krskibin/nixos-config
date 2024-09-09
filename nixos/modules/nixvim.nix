@@ -162,13 +162,13 @@
       pyright.enable = true;
 
       # html
-      htmx.enable = true;
-      htmx.filetypes = ["html" "erb" "haml"];
+      html.enable = true;
+      html.filetypes = ["html" "eruby"];
       cssls.enable = true;
 
       # tailwindcss
       tailwindcss.enable = true;
-      tailwindcss.filetypes = ["html" "erb" "haml"];
+      tailwindcss.filetypes = ["html" "eruby" "haml"];
 
       # json
       jsonls.enable = true;
