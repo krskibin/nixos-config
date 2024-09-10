@@ -120,6 +120,9 @@
   # Enable touchpad support (enabled default in most desktopManager).
   # services.xserver.libinput.enable = true;
 
+  # Get flatpaks
+  services.flatpak.enable = true;
+
   # NixOS experimental features
   nix.settings.experimental-features = ["nix-command" "flakes"];
   

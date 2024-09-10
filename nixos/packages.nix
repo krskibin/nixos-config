@@ -1,4 +1,4 @@
-{ inputs, pkgs, ... }: {
+{ pkgs, ... }: {
   nixpkgs.config = {
     allowUnfree = true;
     permittedInsecurePackages = ["python-2.7.18.8" "electron-25.9.0"];
@@ -22,6 +22,8 @@
     xfce.xfce4-pulseaudio-plugin
     networkmanagerapplet
     blueman
+    libreoffice-qt
+    hunspell
 
     # Development
     nodejs
@@ -94,10 +96,6 @@
     spice-vdagent
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5ct
-
-
-    # Outside source packages
-    inputs.zen-browser.packages.x86_64-linux.default
   ];
   
   fonts.packages = with pkgs; [
