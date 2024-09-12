@@ -425,5 +425,7 @@
   programs.nixvim.plugins.zen-mode.enable = true;
   programs.nixvim.plugins.fzf-lua.enable = true;
   programs.nixvim.plugins.cmp-spell.enable = true;
+  programs.nixvim.plugins.barbecue.enable = true;
+  programs.nixvim.plugins.autoclose.enable = true;
 }
 
