@@ -168,7 +168,7 @@
 
       # tailwindcss
       tailwindcss.enable = true;
-      tailwindcss.filetypes = ["html" "eruby" "haml"];
+      tailwindcss.filetypes = ["html" "eruby"];
 
       # json
       jsonls.enable = true;
