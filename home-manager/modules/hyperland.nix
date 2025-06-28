@@ -115,7 +115,6 @@
         "swww init"
         "swww img ./nixos-wallpaper.webp"
         "waybar"
-	      "slack &"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
       ];

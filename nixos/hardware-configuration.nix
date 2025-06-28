@@ -9,25 +9,25 @@
     ];
 
   boot.initrd.availableKernelModules = [ "nvme" "ahci" "xhci_pci" "usbhid" "usb_storage" "sd_mod" ];
-  boot.initrd.kernelModules = [ "i915" ]; # Enable GPU support in UEFI mode (i915 = Intel GPU)
+  boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/9b0852b3-054a-437a-a86a-9e4b9b8de5a4";
+    { device = "/dev/disk/by-uuid/4cb6002c-5475-4e13-bb4c-e06a30d7a4b9";
       fsType = "ext4";
     };
 
-  boot.initrd.luks.devices."luks-e84a1d94-fe36-4bfa-b197-69ecdc96237f".device = "/dev/disk/by-uuid/e84a1d94-fe36-4bfa-b197-69ecdc96237f";
+  boot.initrd.luks.devices."luks-74308b87-718d-45d1-a4c8-91cb8e7b2e3d".device = "/dev/disk/by-uuid/74308b87-718d-45d1-a4c8-91cb8e7b2e3d";
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/2B07-EA13";
+    { device = "/dev/disk/by-uuid/802C-7715";
       fsType = "vfat";
       options = [ "fmask=0077" "dmask=0077" ];
     };
 
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/aad99864-401f-46ef-80f0-d8bf65eaa383"; }
+    [ { device = "/dev/disk/by-uuid/4454d580-a49d-4692-9641-bdc942719135"; }
     ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking

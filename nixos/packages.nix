@@ -7,7 +7,6 @@
   environment.systemPackages = with pkgs; [
     # Desktop apps
     audacity
-    google-chrome
     obs-studio
     mpv
     kdenlive
