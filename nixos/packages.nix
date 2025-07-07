@@ -16,6 +16,7 @@
     zoom-us
     vscode
     wezterm
+    brave
     slack
     xfce.thunar
     xfce.xfce4-pulseaudio-plugin
