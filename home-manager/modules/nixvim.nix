@@ -1,9 +1,9 @@
-{ pkgs, ... }:
 {
   programs.nixvim = {
     enable = true;
 
     defaultEditor = true;
+
     colorschemes.catppuccin.enable = true;
     colorschemes.catppuccin.settings.background.dark = "mocha";
     
@@ -143,20 +143,19 @@
       nixd.enable = true;
 
       # javascript / typescript
-      tsserver.enable = true;
+      ts_ls.enable = true;
       eslint.enable = true;
 
       # lua
-      lua-ls.enable = true;
+      lua_ls.enable = true;
 
       # rust
-      rust-analyzer.enable = true;
-      rust-analyzer.installRustc = true;
-      rust-analyzer.installCargo = true;
+      rust_analyzer.enable = true;
+      rust_analyzer.installRustc = true;
+      rust_analyzer.installCargo = true;
 
       # ruby
-      ruby-lsp.enable = true;
-      ruby-lsp.cmd = ["${pkgs.rubyPackages_3_3.ruby-lsp}/bin/ruby-lsp"];
+      ruby_lsp.enable = true;
 
       # python
       pyright.enable = true;
@@ -179,63 +178,44 @@
 
   programs.nixvim.plugins.lualine = {
     enable = true;
-    globalstatus = true;
 
     # +-------------------------------------------------+
     # | A | B | C                             X | Y | Z |
     # +-------------------------------------------------+
 
-    sections = {
-      lualine_a = ["mode"];
-      lualine_b = ["branch"];
-      lualine_c = ["filename" "diff"];
-      lualine_x = [
-        "diagnostics"
+    settings = {
+      globalstatus = true;
 
-       # Show active language server
-        {
-          name.__raw = ''
-            function()
-                local msg = ""
-                local buf_ft = vim.api.nvim_buf_get_option(0, 'filetype')
-                local clients = vim.lsp.get_active_clients()
-                if next(clients) == nil then
-                    return msg
-                end
-                for _, client in ipairs(clients) do
-                    local filetypes = client.config.filetypes
-                    if filetypes and vim.fn.index(filetypes, buf_ft) ~= -1 then
-                        return client.name
-                    end
-                end
-                return msg
-            end
-          '';
-          icon = " ";
-          # color.fg = "#ffffff";
-        }
-        "encoding"
-        "fileformat"
-        "filetype"
-      ];
-    };
-
-    tabline = {
-      lualine_a = ["hostname"];
-      lualine_c = [""];
-      lualine_b = ["buffers"];
-      lualine_x = [];
-      lualine_y = [];
-      lualine_z = ["tabs"];
-    };
-
-    winbar = {
-      lualine_a = [];
-      lualine_b = [];
-      lualine_c = [];
-      lualine_x = [];
-      lualine_y = [];
-      lualine_z = [];
+      sections = {
+        lualine_a = ["mode"];
+        lualine_b = ["branch"];
+        lualine_c = ["filename" "diff"];
+        lualine_x = [
+          "diagnostics"
+          "encoding"
+          "fileformat"
+          "filetype"
+        ];
+        lualine_y = [];
+        lualine_z = [];
+      };
+      tabline = {
+        lualine_a = ["hostname"];
+        lualine_c = [""];
+        lualine_b = ["buffers"];
+        lualine_x = [];
+        lualine_y = [];
+        lualine_z = ["tabs"];
+      };
+      
+      winbar = {
+        lualine_a = [];
+        lualine_b = [];
+        lualine_c = [];
+        lualine_x = [];
+        lualine_y = [];
+        lualine_z = [];
+      };
     };
   };
 
@@ -248,21 +228,14 @@
     };
   };
 
-  programs.nixvim.plugins.floaterm = {
-    enable = true;
-
-    width = 0.8;
-    height = 0.8;
-
-    title = "";
-
-    keymaps.toggle = "<C-/>";
-  };
-
   programs.nixvim.plugins.neo-tree = {
     enable = true;
-    filesystem.followCurrentFile.enabled = true;
     closeIfLastWindow = true;
+    filesystem = {
+      followCurrentFile = {
+        enabled = true;
+      };
+    };
   };
 
   programs.nixvim.plugins.telescope = {
@@ -397,6 +370,10 @@
     };
   };
 
+  programs.nixvim.plugins.web-devicons = {
+    enable = true;
+  };
+
   programs.nixvim.plugins.cmp-nvim-lsp = {
     enable = true; # LSP
   };
@@ -418,8 +395,7 @@
   };
 
   programs.nixvim.plugins.treesitter.enable = true;
-  programs.nixvim.plugins.nvim-tree.enable = true;
-  programs.nixvim.plugins.surround.enable = true;
+  programs.nixvim.plugins.vim-surround.enable = true;
   programs.nixvim.plugins.nix.enable = true;
   programs.nixvim.plugins.oil.enable = true;
   programs.nixvim.plugins.zen-mode.enable = true;

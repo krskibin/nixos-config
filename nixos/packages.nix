@@ -9,7 +9,6 @@
     audacity
     obs-studio
     mpv
-    kdenlive
     discord
     gparted
     obsidian
@@ -81,7 +80,6 @@
 
     # GPU stuff 
     amdvlk
-    rocm-opencl-icd
     glaxnimate
 
     # Screenshotting
@@ -96,6 +94,7 @@
     spice-vdagent
     libsForQt5.qtstyleplugin-kvantum
     libsForQt5.qt5ct
+    kdePackages.kdenlive
   ];
   
   fonts.packages = with pkgs; [
@@ -106,6 +105,5 @@
     font-awesome
     powerline-fonts
     powerline-symbols
-    (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
-  ];
+  ] ++ builtins.filter lib.attrsets.isDerivation (builtins.attrValues pkgs.nerd-fonts);
 }
