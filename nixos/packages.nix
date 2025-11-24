@@ -26,7 +26,8 @@
 
     # Development
     nodejs
-    python
+    python2
+    python3
     ruby
     libyaml
     gcc
@@ -79,7 +80,6 @@
     pamixer
 
     # GPU stuff 
-    amdvlk
     glaxnimate
 
     # Screenshotting
