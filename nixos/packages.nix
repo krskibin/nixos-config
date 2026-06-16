@@ -1,7 +1,7 @@
 { pkgs, ... }: {
   nixpkgs.config = {
     allowUnfree = true;
-    permittedInsecurePackages = ["python-2.7.18.8" "electron-25.9.0"];
+    permittedInsecurePackages = ["electron-25.9.0"];
   };
 
   environment.systemPackages = with pkgs; [
@@ -26,7 +26,6 @@
 
     # Development
     nodejs
-    python2
     python3
     ruby
     libyaml
@@ -100,7 +99,7 @@
   fonts.packages = with pkgs; [
     jetbrains-mono
     noto-fonts
-    noto-fonts-emoji
+    noto-fonts-color-emoji
     twemoji-color-font
     font-awesome
     powerline-fonts

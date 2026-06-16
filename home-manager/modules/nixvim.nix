@@ -230,9 +230,9 @@
 
   programs.nixvim.plugins.neo-tree = {
     enable = true;
-    closeIfLastWindow = true;
+    close_if_last_window = true;
     filesystem = {
-      followCurrentFile = {
+      follow_current_file = {
         enabled = true;
       };
     };
@@ -361,10 +361,10 @@
 
   programs.nixvim.plugins.lspkind = {
     enable = true;
-    symbolMap = {
+    symbol_map = {
       Copilot = "";
     };
-    extraOptions = {
+    setings = {
       maxwidth = 50;
       ellipsis_char = "...";
     };

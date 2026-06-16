@@ -35,7 +35,7 @@
       pkgs = nixpkgs.legacyPackages.${system};
       modules = [
         ./home-manager/home.nix
-        inputs.nixvim.homeManagerModules.nixvim  
+        inputs.nixvim.homeModules.nixvim  
       ];
     };
     
