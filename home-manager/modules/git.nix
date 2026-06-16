@@ -1,8 +1,12 @@
 {
   programs.git = {
     enable = true;
-    userName = "krystian";
-    userEmail = "krskibin@gmail.com";
+    settings = {
+      user = {
+        name = "krystian";
+        email = "krskibin@gmail.com";
+      };
+    };
 
     ignores = [
       "**/.envrc"  

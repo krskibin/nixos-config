@@ -17,8 +17,8 @@
     wezterm
     brave
     slack
-    xfce.thunar
-    xfce.xfce4-pulseaudio-plugin
+    thunar
+    xfce4-pulseaudio-plugin
     networkmanagerapplet
     blueman
     libreoffice-qt
@@ -34,7 +34,7 @@
 
     # CLI utils
     neovim
-    neofetch
+    fastfetch
     file
     tree
     wget
@@ -48,7 +48,7 @@
     ranger
     zip
     openssl
-    swww
+    awww
     wev
     bluez
     bluez-tools

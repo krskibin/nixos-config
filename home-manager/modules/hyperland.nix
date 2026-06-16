@@ -3,6 +3,7 @@
     enable = true;
     xwayland.enable = true;
     systemd.enable = false;
+    configType = "hyprlang";
 
     settings = {
       "$mainMod" = "SUPER";
@@ -89,13 +90,10 @@
       };
 
       dwindle = {
-        pseudotile = true; # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
         preserve_split = true; # you probably want this
       };
 
       gestures = {
-        workspace_swipe = true;
-        workspace_swipe_fingers = 3;
         workspace_swipe_invert = false;
         workspace_swipe_distance = 200;
         workspace_swipe_forever = true;
@@ -105,7 +103,6 @@
         animate_manual_resizes = true;
         animate_mouse_windowdragging = true;
         enable_swallow = true;
-        render_ahead_of_time = false;
         disable_hyprland_logo = true;
       };
 
@@ -115,8 +112,8 @@
       ];
 
       exec-once = [
-        "swww init"
-        "swww img ./nixos-wallpaper.webp"
+        "awww init"
+        "awww img ./nixos-wallpaper.webp"
         "waybar"
         "wl-paste --type text --watch cliphist store"
         "wl-paste --type image --watch cliphist store"
@@ -137,7 +134,6 @@
         "$mainMod, F, togglefloating,"
         "$mainMod, D, exec, fuzzel --show drun"
         "$mainMod, P, pseudo, # dwindle"
-        "$mainMod, J, togglesplit, # dwindle"
         "$mainMod, L, exec, hyprlock"
 
         # Move focus with mainMod + arrow keys
