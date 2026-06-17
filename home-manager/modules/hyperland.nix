@@ -106,10 +106,6 @@
         disable_hyprland_logo = true;
       };
 
-      windowrulev2 = [
-        "float, class:^(imv)$"
-        "float, class:^(mpv)$"
-      ];
 
       exec-once = [
         "awww init"
